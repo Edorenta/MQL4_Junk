@@ -143,7 +143,7 @@ void entry_logic(){
    }
 
    if(RSI1>rsi_xtm1 && RSI2<=rsi_xtm1){
-      Comment("GO LONG");
+      Comment("GO SHORT");
       if(trading_authorized()==true && use_short==true && trade_counter(2)<1)SELL();
       if(trade_counter(3)!=0 && r_exit==true)close_longs();
    }
